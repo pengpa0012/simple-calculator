@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Century gothic';
+    background: -webkit-radial-gradient(rgba(0,0,0,.4), rgba(0, 0, 0, 0.8));
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    width: 400px;
+    background: #2b2e2e;
+}
+
+.calculator .output{
+    background: #D1E4A5;
+    color: #161616;
+    min-height: 80px;
+    font-size: 30px;
+    padding: 10px 5px;
+    margin: 25px 15px;
+    border: solid 2px #222222;
+    box-shadow: 0px 5px 5px 5px rgba(135, 148, 107, .7) inset;
+}
+
+.calculator .output h1{
+    font-size: 35px;
+    padding: 0px 15px;
+    text-align: right;
+    width: 100%;
+    word-break: break-all;
+}
+
+.calculator .key{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    text-align: center;
+}
+
+.calculator .num{
+    font-size: 50px;
+    cursor: pointer;
+    background: -webkit-linear-gradient(#1E1E1E, #2E2E2E);
+    color: #e7e7e7;
+    padding: 20px 30px;
+}
+
+.num:hover{
+    background: -webkit-linear-gradient(#2E2E2E, #1E1E1E);
+}
+
+.calculator .plus{
+    background: -webkit-linear-gradient(#FF4964, #fc91a1);
+}
+
+.calculator .minus{
+    background: -webkit-linear-gradient(#FF4964, #fc91a1);
+}
+
+.calculator .times{
+    background: -webkit-linear-gradient(#FF4964, #fc91a1);
+}
+
+.calculator .divide{
+    background: -webkit-linear-gradient(#FF4964, #fc91a1);
+}
+
+.calculator .equals{
+    background: -webkit-linear-gradient(#FFA810, #fdc253);
+}
+
+.calculator .equals:hover, .calculator .minus:hover, .calculator .plus:hover, .calculator .times:hover,
+.calculator .divide:hover{
+    background: -webkit-linear-gradient(#fc91a1, #FF4964);
+}
+
+.calculator .equals:hover{
+    background: -webkit-linear-gradient(#fdc253, #FFA810);
+}
+
+@media (max-width: 600px){
+    .calculator{
+        width: 280px;
+    }
+
+    .calculator .key{
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+
+    .calculator .num{
+        font-size: 30px;
+        padding: 10px 15px;
+    }
+}
+
