@@ -78,6 +78,7 @@ body{
 
 .calculator .equals{
     background: -webkit-linear-gradient(#FFA810, #fdc253);
+    grid-column: 1 / 5;
 }
 
 .calculator .equals:hover, .calculator .minus:hover, .calculator .plus:hover, .calculator .times:hover,
